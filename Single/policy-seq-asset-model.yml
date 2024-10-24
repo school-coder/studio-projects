@@ -1,0 +1,14 @@
+kind: PolicySequence
+apiVersion: api.webmethods.io/v1
+metadata:
+  name: swagger-policy-seq
+  version: '1.0'
+  namespace: single
+  tags:
+    - swagger
+    - policy-seq
+spec:
+  transport:
+    - $ref: single:swagger-transport:1.0
+  routing:
+    - $ref: single:swagger-routing:1.0
